@@ -10,7 +10,6 @@ homebrew_packages:
   - { name: ctags }
   - { name: eigen }
   - { name: exiftool }
-  - { name: fcrackzip }
   - { name: ffmpeg }
   - { name: fish }
   - { name: flac }
@@ -74,7 +73,6 @@ homebrew_packages:
   - { name: msgpack }
   - { name: mtr }
   - { name: mutt }
-  - { name: neovim }
   - { name: netperf }
   - { name: nkf }
   - { name: nmap }
@@ -85,16 +83,13 @@ homebrew_packages:
   - { name: openexr }
   - { name: openjpeg }
   - { name: openssl }
-  - { name: openssl@1.1 }
   - { name: opus }
   - { name: p7zip }
   - { name: pango }
   - { name: pcre }
   - { name: pcre2 }
-  - { name: pdfcrack }
   - { name: perl-build }
   - { name: pixman }
-  - { name: pkcrack }
   - { name: pkg-config }
   - { name: plenv }
   - { name: pyenv }
@@ -118,7 +113,6 @@ homebrew_packages:
   - { name: tcpflow }
   - { name: theora }
   - { name: tmux }
-  - { name: tokyo-cabinet }
   - { name: tor }
   - { name: tree }
   - { name: unibilium }
@@ -127,34 +121,26 @@ homebrew_packages:
   - { name: wget }
   - { name: x264 }
   - { name: x265 }
-  - { name: xvid }
-  - { name: xz }
-  - { name: yara }
 
 homebrew_cask_packages:
-  - { name: spectacle }
   - { name: alfred }
-  - { name: slack }
-  - { name: table-tool }
-  - { name: google-chrome }
-  - { name: macdown }
-  - { name: firefox }
-  - { name: thunderbird }
-  - { name: atom }
   - { name: appcleaner }
+  - { name: atom }
   - { name: blender }
   - { name: chromium }
   - { name: docker }
   - { name: drawio }
   - { name: emacs }
+  - { name: firefox }
   - { name: github }
-  - { name: hyper }
+  - { name: google-chrome }
   - { name: insomnia }
+  - { name: macdown }
   - { name: mactex }
-  - { name: rocket-chat }
+  - { name: slack }
   - { name: spectacle }
-  - { name: steam }
-  - { name: sublime-text }
+  - { name: table-tool }
+  - { name: thunderbird }
   - { name: tuntap }
   - { name: vagrant }
   - { name: visual-studio-code }
