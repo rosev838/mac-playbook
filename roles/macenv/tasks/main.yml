@@ -1,0 +1,4 @@
+- name: Add homebrew tap repository
+  command: 
+  with_items:
+    - "{{ mac_defaults }}"

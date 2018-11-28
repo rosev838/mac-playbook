@@ -1,4 +1,4 @@
-homebrew_taps:
+mac_defaults:
   - caskroom/cask
 
 homebrew_packages:
