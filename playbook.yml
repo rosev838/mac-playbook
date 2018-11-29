@@ -2,4 +2,4 @@
   connection: local
   roles:
     - { role: homebrew, tags: [homebrew] }
-    #- { role: macenv, tags: [macenv] }
+    - { role: macenv, tags: [macenv] }

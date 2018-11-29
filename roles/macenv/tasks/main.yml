@@ -1,4 +1,49 @@
-- name: Add homebrew tap repository
-  command: 
-  with_items:
-    - "{{ mac_defaults }}"
+- name: Mac defaults
+
+- name: Base
+
+- name: スクロールバーの常時表示
+  command: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+  
+- name: コンソールアプリケーションの画面サイズ変更を高速にする
+  command: defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+  
+- name: クラッシュレポートの無効化
+  command: defaults write com.apple.CrashReporter DialogType -string "none"
+  
+- name: 時計アイコンクリック時にOSやホスト名ipを表示する
+  command: defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+  
+- name: Bluetoothヘッドフォン/ヘッドセットの音質を向上させる
+  command: defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+  
+- name: Dock
+
+- name: window効果の最大/最小を変更
+  command: defaults write com.apple.dock mineffect -string "scale"
+  
+- name: Dockで開いているアプリケーションのインジケータライトを表示する
+  command: defaults write com.apple.dock show-process-indicators -bool true
+  
+- name: 開いているアプリケーションのみをdockに表示
+  command: defaults write com.apple.dock static-only -bool true
+  
+- name: アプリケーション起動時のアニメーションを無効化
+  command: defaults write com.apple.dock launchanim -bool false
+  
+- name: すべての（デフォルトの）アプリアイコンをDockから消去する
+  commnad: defaults write com.apple.dock persistent-apps -array
+  
+- name: Dashboard無効化
+  command: defaults write com.apple.dashboard mcx-disabled -bool true
+  
+- name: Finder
+
+- name: リモートファイルシステムにおいてDS_Storeを作成しない
+  command: defaults write com.apple.desktopservices DSDontWriteNetworkStores True
+  
+  
+- name: Others
+
+- name: ブート時のサウンドの無効化
+  command: sudo nvram SystemAudioVolume=" "
