@@ -14,8 +14,8 @@
 - name: 時計アイコンクリック時にOSやホスト名ipを表示する
   command: defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
   
-- name: Bluetoothヘッドフォン/ヘッドセットの音質を向上させる
-  command: defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# - name: Bluetoothヘッドフォン/ヘッドセットの音質を向上させる
+#  command: defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
   
 - name: Dock
 
