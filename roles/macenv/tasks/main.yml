@@ -58,3 +58,6 @@
 
 - name: Show the ~/Library directory （ライブラリディレクトリを表示、デフォルトは非表示）
   command: chflags nohidden ~/Library 
+  
+- name: 未確認のアプリケーションを実行する際のダイアログを無効にする
+  command: defaults write com.apple.LaunchServices LSQuarantine -bool false
