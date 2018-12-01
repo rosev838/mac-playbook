@@ -41,7 +41,13 @@
 
 - name: リモートファイルシステムにおいてDS_Storeを作成しない
   command: defaults write com.apple.desktopservices DSDontWriteNetworkStores True
-  
+
+- name: 新しいウィンドウでデフォルトでホームフォルダを開く
+  command: defaults write com.apple.finder NewWindowTarget -string "PfDe"
+  commnad: defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/" 
+
+- name: Show the ~/Library directory （ライブラリディレクトリを表示、デフォルトは非表示）
+  command: chflags nohidden ~/Library 
   
 - name: Others
 
@@ -50,14 +56,6 @@
 
 - name: Allow you to select and copy string in QuickLook （QuickLook で文字の選択、コピーを出来るようにする）
   command: defaults write com.apple.finder QLEnableTextSelection -bool true
-
-
-- name: 新しいウィンドウでデフォルトでホームフォルダを開く
-  command: defaults write com.apple.finder NewWindowTarget -string "PfDe"
-  commnad: defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/" 
-
-- name: Show the ~/Library directory （ライブラリディレクトリを表示、デフォルトは非表示）
-  command: chflags nohidden ~/Library 
   
 - name: 未確認のアプリケーションを実行する際のダイアログを無効にする
   command: defaults write com.apple.LaunchServices LSQuarantine -bool false
