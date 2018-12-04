@@ -5,7 +5,6 @@ Uncompleted.(Nov. 24. 2018)
 It is for my own environment.
 
 # ToDo
-- macenv
 - dotfiles
 
 # Refs.
