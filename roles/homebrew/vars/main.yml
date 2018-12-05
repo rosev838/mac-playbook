@@ -281,6 +281,8 @@ homebrew_packages:
   - { name: wget }
   - { name: x264 }
   - { name: x265 }
+  - { name: coreutils }
+  - { name: cowsay }
 
 
 homebrew_cask_packages:
