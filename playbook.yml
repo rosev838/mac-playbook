@@ -3,3 +3,4 @@
   roles:
     - { role: homebrew, tags: [homebrew] }
     - { role: macenv, tags: [macenv] }
+    - { role: dotfiles, tags: [dotfiles] }

@@ -1,0 +1,19 @@
+- name: Checkout my dotfiles
+  git: 
+    repo: https://github.com/rosev838/dotfiles.git
+    dest: ~/.dotfiles
+
+- name: Create symbolic links
+  file:
+    src: ~/.dotfiles/{{ item }}
+    dest: ~/{{ item }}
+    state: link
+    force: yes
+  with_items:
+    - .bashrc
+    - .gitconfig
+    - .gitignore
+    - .screenrc
+    - .tmux.conf
+    - .vimrc
+    - .zshrc
