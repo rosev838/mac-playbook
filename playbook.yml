@@ -1,4 +1,6 @@
-- hosts: localhost
+- hosts: lh
+  sudo: yes
+  remote_user: {{ mac_user }}
   connection: local
   roles:
     - { role: homebrew, tags: [homebrew] }
